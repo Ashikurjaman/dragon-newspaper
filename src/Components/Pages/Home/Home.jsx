@@ -4,8 +4,10 @@ import Navbar from '../Shared/Navbar/Navbar';
 import LeftNavbar from '../Shared/LeftNavbar/LeftNavbar';
 import RightNavbar from '../Shared/RightNavbar/RightNavbar';
 import BreakingNews from './BreakingNews/BreakingNews';
+import { useState } from 'react';
 
 const Home = () => {
+    const [news,setNews] =useState([])
     return (
         <div>
             <Header/>
@@ -17,7 +19,7 @@ const Home = () => {
                         <LeftNavbar></LeftNavbar>
                     </div>
                     <div className='col-span-2'>
-                        <h3 className="text-4xl">News Comming Soon....</h3>
+                        
                     </div>
                     <div>
                         <RightNavbar></RightNavbar>
